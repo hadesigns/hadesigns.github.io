@@ -1,1 +1,132 @@
-<h1> Welcome Coy</h1> 
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Untitled Page</title>
+<meta name="generator" content="WYSIWYG Web Builder 12 - http://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="test_github.css" rel="stylesheet">
+<link href="index.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="skrollr.min.js"></script>
+<script src="scrollspy.min.js"></script>
+<script src="wb.carousel.min.js"></script>
+<script src="wwb12.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   skrollr.init({forceHeight: false, mobileCheck: function() { return false; }, smoothScrolling: false});
+   var Carousel1Opts =
+   {
+      delay: 3000,
+      duration: 500,
+      easing: 'linear',
+      mode: 'forward',
+      direction: '',
+      scalemode: 1,
+      pagination: true,
+      pagination_img_default: 'images/page_default.png',
+      pagination_img_active: 'images/page_active.png',
+      start: 0
+   };
+   $("#Carousel1").on('activate', function(event, index)
+   {
+      switch(index)
+      {
+      }
+   });
+   $("#Carousel1").on('beforeActivate', function(event, index)
+   {
+      switch(index)
+      {
+         case 0:
+            AnimateCss('wb_Title1', 'transform-scale-in', 400, 500);
+            AnimateCss('wb_Review1', 'transform-lightspeed-in', 800, 500);
+            AnimateCss('User1', 'animate-rotate-in-left', 800, 1000);
+            break;
+         case 1:
+            AnimateCss('wb_Title2', 'transform-scale-in', 500, 500);
+            AnimateCss('wb_Review2', 'transform-lightspeed-in', 800, 500);
+            AnimateCss('User2', 'animate-rotate-in-left', 800, 1000);
+            break;
+         case 2:
+            AnimateCss('wb_Title3', 'transform-scale-in', 500, 500);
+            AnimateCss('wb_Review3', 'transform-lightspeed-in', 800, 500);
+            AnimateCss('User3', 'animate-rotate-in-left', 800, 1000);
+            break;
+      }
+   });
+   $("#Carousel1").carousel(Carousel1Opts);
+   $("#Carousel1_back a").click(function()
+   {
+      $('#Carousel1').carousel('prev');
+   });
+   $("#Carousel1_next a").click(function()
+   {
+      $('#Carousel1').carousel('next');
+   });
+});
+</script>
+</head>
+<body data-spy="scroll">
+<div id="container">
+</div>
+<div id="PageHeader" style="position:fixed;overflow:hidden;text-align:center;left:0;top:0;right:0;height:50px;z-index:7777;" data-top="background:rgba(33, 33, 33, 0.0);" data--50-top="background:rgba(33, 33, 33, 1.0);">
+<div id="PageHeader_Container" style="width:1280px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+<div id="wb_CssMenu1" style="position:absolute;left:607px;top:5px;width:339px;height:40px;text-align:right;z-index:0;">
+<ul>
+<li class="firstmain"><a href="#" target="_self">ABOUT</a>
+</li>
+<li><a href="#" target="_self">SERVICES</a>
+</li>
+<li><a href="#" target="_self">PORTFOLIO</a>
+</li>
+<li><a href="#" target="_self">CONTACT</a>
+</li>
+</ul>
+</div>
+<div id="wb_CssMenu2" style="position:absolute;left:8px;top:5px;width:179px;height:44px;z-index:1;">
+<ul>
+<li class="firstmain"><a href="#" target="_self">hadesigns</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="wb_Carousel1" style="position:absolute;left:0px;top:50px;width:1280px;height:686px;z-index:9;overflow:hidden;position:relative;">
+<div id="Carousel1" style="position:absolute">
+<div class="frame frame-1">
+<div id="wb_Title1" style="position:absolute;left:356px;top:285px;width:569px;height:49px;text-align:center;z-index:2;">
+<h1 id="Title1">Craig</h1></div>
+<div id="wb_Review1" style="position:absolute;left:306px;top:337px;width:669px;height:48px;text-align:center;z-index:3;">
+<span style="color:#FFFFFF;font-family:Arial;font-size:13px;"><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</em></span></div>
+</div>
+<div class="frame frame-2">
+<div id="wb_Title2" style="position:absolute;left:1655px;top:270px;width:531px;height:36px;text-align:center;z-index:4;">
+<h1 id="Title2">Tim</h1></div>
+<div id="wb_Review2" style="position:absolute;left:1586px;top:322px;width:669px;height:48px;text-align:center;z-index:5;">
+<span style="color:#FFFFFF;font-family:Arial;font-size:13px;"><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</em></span></div>
+</div>
+<div class="frame frame-3">
+<div id="wb_Title3" style="position:absolute;left:2940px;top:279px;width:520px;height:36px;text-align:center;z-index:6;">
+<h1 id="Title3">Ive</h1></div>
+<div id="wb_Review3" style="position:absolute;left:2866px;top:331px;width:669px;height:48px;text-align:center;z-index:7;">
+<span style="color:#FFFFFF;font-family:Arial;font-size:13px;"><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</em></span></div>
+</div>
+</div>
+<div id="Carousel1_back" style="position:absolute;left:10px;top:47%;width:20px;height:30px;z-index:999"><a style="cursor:pointer"><img alt="Back" style="border-width:0" src="images/arrow-prev-white.png"></a></div>
+<div id="Carousel1_next" style="position:absolute;right:10px;top:47%;width:20px;height:30px;z-index:999"><a style="cursor:pointer"><img alt="Next" style="border-width:0" src="images/arrow-next-white.png"></a></div>
+</div>
+<div id="wb_Footer">
+<div id="Footer">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text9">
+<span style="color:#000000;font-family:Arial;font-size:13px;"><br></span><span style="color:#FFFFFF;font-family:Arial;font-size:13px;">Copyright © hadesigns</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
