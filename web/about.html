@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Untitled Page</title>
+<meta name="generator" content="WYSIWYG Web Builder 12 - http://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="DARK_BARU.css" rel="stylesheet">
+<link href="about.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="skrollr.min.js"></script>
+<script src="scrollspy.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="wb.carousel.effects.min.js"></script>
+<script src="wwb12.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   skrollr.init({forceHeight: false, mobileCheck: function() { return false; }, smoothScrolling: false});
+   $("#wb_ResponsiveMenu1 ul li a").click(function(event)
+   {
+      $("#wb_ResponsiveMenu1 input").prop("checked", false);
+   });
+   var aboutOpts =
+   {
+      delay: 6000,
+      duration: 500,
+      easing: 'linear',
+      mode: 'fade',
+      direction: '',
+      scalemode: 3,
+      pagination: true,
+      pagination_img_default: 'images/page_default.png',
+      pagination_img_active: 'images/page_active.png',
+      start: 0
+   };
+   $("#about").on('activate', function(event, index)
+   {
+      switch(index)
+      {
+      }
+   });
+   $("#about").on('beforeActivate', function(event, index)
+   {
+      switch(index)
+      {
+         case 0:
+            AnimateCss('wb_Title1', 'transform-scale-in', 400, 500);
+            AnimateCss('wb_Review1', 'transform-lightspeed-in', 800, 500);
+            AnimateCss('User1', 'animate-rotate-in-left', 800, 1000);
+            break;
+         case 1:
+            AnimateCss('wb_Title2', 'transform-scale-in', 500, 500);
+            AnimateCss('wb_Review2', 'transform-lightspeed-in', 800, 500);
+            AnimateCss('User2', 'animate-rotate-in-left', 800, 1000);
+            break;
+         case 2:
+            AnimateCss('wb_Title3', 'transform-scale-in', 500, 500);
+            AnimateCss('wb_Review3', 'transform-lightspeed-in', 800, 500);
+            AnimateCss('User3', 'animate-rotate-in-left', 800, 1000);
+            break;
+      }
+   });
+   $("#about").carouseleffects(aboutOpts);
+   $("#about_back a").click(function()
+   {
+      $('#about').carouseleffects('prev');
+   });
+   $("#about_next a").click(function()
+   {
+      $('#about').carouseleffects('next');
+   });
+});
+</script>
+</head>
+<body data-spy="scroll">
+<div id="container">
+</div>
+<div id="PageHeader1" data-top="background-color:rgb(0,0,0);" data--50-top="background-color:rgb(0,0,0);">
+<div id="wb_ResponsiveMenu1">
+<label class="toggle" for="ResponsiveMenu1-submenu" id="ResponsiveMenu1-title"><span id="ResponsiveMenu1-icon"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></span></label>
+<input type="checkbox" id="ResponsiveMenu1-submenu">
+<ul class="ResponsiveMenu1" id="ResponsiveMenu1">
+<li><a href="./index.html#home">HOME</a></li>
+<li><a href="#LayoutGrid3">ABOUT</a></li>
+<li><a href="./index.html#property">PROPERTY</a></li>
+<li><a href="#">SUPPORT</a></li>
+<li><a href="#">CARIER</a></li>
+<li><a href="#">CONTACT</a></li>
+</ul>
+</div>
+<div id="wb_Text6">
+<span style="color:#FFD700;font-family:'Times New Roman';font-size:20px;">THE BOULEVARD</span></div>
+</div>
+<div id="wb_about">
+<div id="about">
+<div class="frame frame-1">
+<div class="innerframe">
+<div id="wb_Title1">
+<h1 id="Title1">The Boulevard</h1></div>
+<div id="wb_Review1">
+<span style="color:#FFFFFF;font-family:Arial;font-size:20px;"><em>Apartemen selesai di bangun pada tahun 2009<br>Pengembang Agung Sedayu Group</em></span></div>
+</div>
+</div>
+<div class="frame frame-2" style ="display:none">
+<div class="innerframe">
+<div id="wb_Title2">
+<h1 id="Title2">Konsep 2-1</h1></div>
+<div id="wb_Review2">
+<span style="color:#FFFFFF;font-family:Arial;font-size:19px;">Apartemen ini terdiri dari 27 lantai menggunakan konsep yang unik, <br>yaitu konsep 2-1 dimana 9 (12 unit per lantai) <br>lantai pertama digunakan sebagai kantor, <br>sedangkan lantai 11-27 (18 unit per lantai) <br>digunakan sebagai apartemen.</span><span style="color:#FFFFFF;font-family:Arial;font-size:11px;"><br></span></div>
+</div>
+</div>
+<div class="frame frame-3" style ="display:none">
+<div class="innerframe">
+<div id="wb_Review3">
+<span style="color:#FFFFFF;font-family:Arial;font-size:19px;">Hunian Ekslusif yang berada di pusat kota Jakartayang memiliki akses yang mudah ke Jakarta Pusat bisnis terpadu di Sudirman dan Thamrin</span></div>
+<div id="wb_Title3">
+<h1 id="Title3">Akses Mudah</h1></div>
+</div>
+</div>
+</div>
+<div id="about_back"><a style="cursor:pointer"><img alt="Back" style="border-width:0" src="images/arrow-prev-white.png"></a></div>
+<div id="about_next"><a style="cursor:pointer"><img alt="Next" style="border-width:0" src="images/arrow-next-white.png"></a></div>
+</div>
+<div id="wb_LayoutGrid3">
+<div id="LayoutGrid3">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text2">
+<span style="color:#FFD700;font-family:Arial;font-size:53px;"><strong>01<br></strong></span><span style="color:#C0C0C0;font-family:Arial;font-size:16px;"><strong>TOWER</strong></span>
+</div>
+<div id="wb_Shape2">
+<img src="images/img0010.png" id="Shape2" alt="">
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text3">
+<span style="color:#FFD700;font-family:Arial;font-size:53px;"><strong>27<br></strong></span><span style="color:#C0C0C0;font-family:Arial;font-size:16px;"><strong>LANTAI</strong></span>
+</div>
+<div id="wb_Shape1">
+<img src="images/img0011.png" id="Shape1" alt="">
+</div>
+</div>
+<div class="col-3">
+<div id="wb_Text4">
+<span style="color:#FFD700;font-family:Arial;font-size:53px;"><strong>306<br></strong></span><span style="color:#C0C0C0;font-family:Arial;font-size:16px;"><strong>UNIT</strong></span>
+</div>
+<div id="wb_Shape3">
+<img src="images/img0012.png" id="Shape3" alt="">
+</div>
+</div>
+<div class="col-4">
+<div id="wb_Text5">
+<span style="color:#FFD700;font-family:Arial;font-size:53px;"><strong>42-49<br></strong></span><span style="color:#C0C0C0;font-family:Arial;font-size:16px;"><strong>LUAS UNIT / M<sup>2</sup></strong></span>
+</div>
+<div id="wb_Shape4">
+<img src="images/img0013.png" id="Shape4" alt="">
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
